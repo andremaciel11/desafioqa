@@ -1,4 +1,6 @@
-Funcionalidade: Trava no front-end para impossibilitar a compra de eventos com datas anteriores da atual
+#Situações encontradas
+
+##Funcionalidade: Trava no front-end para impossibilitar a compra de eventos com datas anteriores da atual
 
 Cenário: Efetuar compras do evento com data passada
 	Dado: que o botão de comprar ingressos esteja habilitado
@@ -10,7 +12,8 @@ Exemplo:
 	|        mensagem        |
 	| Evento já realizado! |
 
-Funcionalidade: Permitir a compra de ingressos sem nenhum custo e envio de ingresso por e-mail
+
+##Funcionalidade: Permitir a compra de ingressos sem nenhum custo e envio de ingresso por e-mail
 
 Cenário: Efetuar compras de ingressos sem valor
 	Dado: que o botão de comprar ingressos esteja habilitado
@@ -21,7 +24,7 @@ Cenário: Efetuar compras de ingressos sem valor
 	Então: uma tela com informações sobre a compra será exibida
 
 
-Funcionalidade: Incluir um validador de CPF em cada input de CPF por ingresso
+##Funcionalidade: Incluir um validador de CPF em cada input de CPF por ingresso
 
 Cenário: Validar CPF inserido por ingresso
 	Dado: que os ingressos já foram selecionados
@@ -35,7 +38,8 @@ Exemplo:
 	|        mensagem        |
 	|       CPF inválido      |
 
-Funcionalidade: Permitir a compra de ingressos pagos e envio de ingresso por e-mail
+
+##Funcionalidade: Permitir a compra de ingressos pagos e envio de ingresso por e-mail
 
 Cenário: Efetuar compras de ingressos pagos cartão
 	Dado: que o botão de comprar ingressos esteja habilitado
@@ -48,8 +52,7 @@ E: preencher todos os campos obrigatórios
 Então: uma tela com informações sobre a compra será exibida
 
 
-
-Funcionalidade: Permitir que a ferramenta disponibilize opções de parcelamento de valor na forma de pagamento cartão de crédito
+##Funcionalidade: Permitir que a ferramenta disponibilize opções de parcelamento de valor na forma de pagamento cartão de crédito
 
 Cenário: Permitir parcelamento de compras via cartão de crédito
 	Dado: que o botão de comprar ingressos esteja habilitado
@@ -63,7 +66,7 @@ E: preencher todos os campos obrigatórios
 	Então: uma tela com informações sobre a compra será exibida
 
 
-Funcionalidade: Permitir a compra de ingressos pagos via boleto e envio de ingresso por e-mail
+##Funcionalidade: Permitir a compra de ingressos pagos via boleto e envio de ingresso por e-mail
 
 Cenário: Efetuar compras de ingressos pagos boleto
 	Dado: que o botão de comprar ingressos esteja habilitado
@@ -76,8 +79,7 @@ E: preencher todos os campos obrigatórios
 	Então: uma tela com informações sobre a compra será exibida
  
 
-
-Funcionalidade: 
+##Funcionalidade: Sistema enviar as informações corretas para cada cliente e suas especificações des compra via boleto
 
 Cenário: Verificar informações de pagamento via boleto
 	Dado: que a compra via boleto já foi efetuada
@@ -86,7 +88,7 @@ Cenário: Verificar informações de pagamento via boleto
 	Então: verificar as informações sobre pagador e valor a ser pago
 
 
-Funcionalidade: 
+##Funcionalidade: Sistema enviar para o e-mail as informações corretas para cada cliente e suas especificações des compra via boleto
 
 Cenário: Verificar informações recebidas por e-mail de boleto
 	Dado: que a compra via boleto já foi efetuada
@@ -99,7 +101,8 @@ Exemplo:
 	|       Boleto para o evento Treinamentos Produto      |
 
 
-Funcionalidade: Ao selecionar o checkbox “Não sou brasileiro”, todos os campos relacionados devem ser alterados para pessoas estrangeiras (Telefone / CPF)
+##Funcionalidade: Ao selecionar o checkbox “Não sou brasileiro”, todos os campos relacionados devem ser alterados para pessoas 
+estrangeiras (Telefone / CPF)
 
 Cenário: Selecionar nacionalidade exterior e alterar campos
 	Dado: que os ingressos já foram inseridos no carrinho
@@ -107,8 +110,8 @@ Cenário: Selecionar nacionalidade exterior e alterar campos
 	Então: todos os campos CPF e telefone devem ter a máscara removida/atualizada
 	
 
-
-Funcionalidade: Ao digitar o CEP de uma localidade, todas as informações disponibilizadas pela api dos correios, deve ser inserida nos campos corretos
+##Funcionalidade: Ao digitar o CEP de uma localidade, todas as informações disponibilizadas pela api dos correios, deve ser inserida 
+nos campos corretos
 
 Cenário: Digitar CEP e informações de endereço serem inseridas
 	Dado: todas as informações de compra já foram inseridas
@@ -116,17 +119,20 @@ Cenário: Digitar CEP e informações de endereço serem inseridas
 	Então: os campos Logradouro, Bairro e Estado serão atualizados com as informações do CEP retornadas pela api
 
 
-Funcionalidade: 
+##Funcionalidade: O sistema deve atualizar os campos vinculados(Logradouro, cidade, bairro e estado) ao usuário preencher o cep 
+corretamente
 
 Cenário: Atualizar CEP e informações de endereço serem inseridas
 	Dado: todas as informações de compra já foram inseridas
 	Quando: preencher o campo CEP no endereço de cobrança
 	E: verificar que o cep está incorreto
 E: inserir novamente as informações corretas
-	Então: os campos Logradouro, Cidade, Bairro e Estado serão atualizados com as informações do CEP retornadas pela api (O campo cidade não existe quando é estrangeiro)
+	Então: os campos Logradouro, Cidade, Bairro e Estado serão atualizados com as informações do CEP retornadas pela api 
+	(O campo cidade não existe quando é estrangeiro)
 
 
-Funcionalidade: Ao acabar o tempo da sessão dentro do modal de compra, todas as informações devem ser limpas ao iniciar uma nova compra
+##Funcionalidade: Ao acabar o tempo da sessão dentro do modal de compra, todas as informações devem ser limpas ao iniciar uma nova 
+compra
 
 Cenário: Limpar informações do carrinho ao expirar tempo de compra
 	Dado: as informações sobre ingressos foram preenchidas
