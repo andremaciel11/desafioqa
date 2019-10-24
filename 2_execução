@@ -1,0 +1,59 @@
+Ação: Efetuar compras do evento com data passada 
+Dado de entrada: Ingressos do evento passado
+Resultado obtido: Sucesso ao comprar ingressos do evento passado
+Resultado do teste: Reprovado
+
+Ação: Efetuar compras de ingressos sem valor
+Dado de entrada: Ingressos selecionados no checkout com valor R$ 0,00
+Resultado obtido: Sucesso ao comprar ingressos sem valor
+Resultado do teste: Aprovado
+
+Ação: Validar CPF inserido por ingresso 
+Dado de entrada: Número 11111311111 inserido no campo CPF abaixo de cada ingresso selecionado
+Resultado obtido: O campo aceita o número inválido e não informa validação alguma
+Resultado do teste: Reprovado
+
+Ação: Efetuar compras de ingressos pagos cartão
+Dado de entrada: Número 4242 4242 4242 4242 e CVV 400 em compras via cartão de crédito (também foi utilizado geradores de cartão 4devs e não funcionou =/)
+Resultado obtido: Erro da operadora, informando sobre divergência nos dados inseridos
+Resultado do teste: Reprovado
+
+Ação: Permitir parcelamento de compras
+Dado de entrada: Três ingressos inseridos ao carrinho
+Resultado obtido: A opção de parcelamento não aparece
+Resultado do teste: Reprovado
+
+Ação: Efetuar compras de ingressos pagos boleto
+Dado de entrada: Informado que o usuário é estrangeiro marcada
+Resultado obtido: A opção de pagamento em boleto não aparece
+Resultado do teste: Reprovado
+
+Ação: Verificar informações de pagamento via boleto 
+Dado de entrada: Com ingressos vinculados ao carrinho e opção boleto for selecionada
+Resultado obtido: O modal das informações junto ao botão imprimir boleto é informado, abrindo outra janela com o boleto e todas as informações corretas
+Resultado do teste: Aprovado
+
+Ação: Verificar informações recebidas por e-mail de boleto 
+Dado de entrada: Recebimento de e-mail da confirmação de compra por boleto
+Resultado obtido: Informações discrepantes com a informação inserida no modal de confirmação do site (Na informação do site para pagar imediatamente o boleto, diz que pode levar 2hrs. No e-mail indica algumas horas. Padronizar informações)
+Resultado do teste: Reprovado
+
+Ação: Selecionar nacionalidade exterior e alterar campos 
+Dado de entrada: Informado que o usuário é estrangeiro marcada
+Resultado obtido: Os campos de CPF e telefone não foram alterados para comportar usuários estrangeiros
+Resultado do teste: Reprovado
+
+Ação: Digitar CEP e informações de endereço serem inseridas 
+Dado de entrada: Número inserido no campo CEP nos dados de cobrança
+Resultado obtido: Os campos Logradouro, Cidade, Bairro e Estado foram atualizados (O campo cidade não existe quando é estrangeiro)
+Resultado do teste: Aprovado
+
+Ação: Atualizar CEP e informações de endereço serem inseridas 
+Dado de entrada: Número errado inserido no campo CEP dos dados de cobrança
+Resultado obtido: Os campos Logradouro, Cidade, Bairro e Estado não foram atualizados (O campo cidade não existe quando é estrangeiro)
+Resultado do teste: Reprovado
+
+Ação: Limpar informações do carrinho ao expirar tempo de compra 
+Dado de entrada: Tempo de expirar sessão finalizado e abertura do carrinho para nova compra
+Resultado obtido: Informações do comprador anterior (O certo é limpar os dados para toda nova compra)
+Resultado do teste: Reprovado
