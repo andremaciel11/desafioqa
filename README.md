@@ -1,56 +1,24 @@
 # Desafio para a vaga de Analista de Testes
-Se você recebeu esse link, provavelmente você se candidatou para a vaga de Analista de Testes do time de produto da mobLee. Então, primeiramente, parabéns por ter sido selecionado =)
+Primeiramente, gostaria de agradecer muito a oportunidade! \o/
+Também quero pedir desculpas pela qualidade dos testes, pois ainda estou trabalhando aqui na Blueticket e estamos em final de projeto.
+Meu tempo estava bem contado e tive poucos momentos para fazer mesmo. =(
 
-Abaixo seguem todas as instruções para você conseguir executar o desafio.
+Aqui vai uma intro bem breve: =)
+Sempre trabalhei como desenvolvedor java, sempre gostei da parte do desenvolvimento, mas sentia que faltava algo. Vim pra floripa a quase seis anos tentando empreender, com o sonho do próprio negócio. Porém, não deu certo por vários motivos. Voltei para o mundo coorporativo como CS e fiquei deslumbrado com a quantidade de coisas que eu poderia fazer, onde me joguei para o mundo de QA. Sabe o desejo de ver aquela coisa que deu boa e que passou por você? Isso é gratificante!
 
-### Como entregar este desafio
-1. Faça um fork deste repositório no Github (ou qualquer outro gerenciador git da sua preferência).
-2. Edite esse README e mantenha ele atualizado com o passo-a-passo do seu processo, bem como qualquer outra informação relevante para que tenhamos a melhor compreensão possível do seu desafio
-3. Fique a vontade para adicionar qualquer tipo de conteúdo/arquivo que julgue útil
-4. Ao final do desafio, responda o e-mail que você recebeu enviando o link do seu repositório.
-Obs.: Não fazer um Pull Request para este projeto!
+Hoje, aqui na Blueticket, sou o responsável pela parte de testes e qualidade em software, dentro da equipe de produto e tecnologia. Um pouco descontente com a questão de carreira e falta de desafios, mas isso fica pra um próximo papo. =)
 
-### Com o que devo me preocupar quando for entregar os desafios?
-- Descreva como utilizar e executar a sua solução;
-- Descreva o processo de resolução dos desafios;
-- Descreva a motivação e o porque da utilização de cada tecnologia;
-- Descreva qualquer outra coisa que acha importante sabermos :)
-- Não se limite aos requisitos destes desafios. Sinta-se em casa em adicionar mais detalhes a solução.
+Trabalho muito bem em equipe, muito animado, autodidata com grande vontade de conhecer tudo e estar envolvido! \o/
+Tenho uma frase de meta diária que pode parecer bobo, mas, "Um dia que você não aprende nada, pode ser considerado um dia perdido."
+
+Vamos lá =D
 
 ## Desafio 1 - Planejamento de testes
-Objetivo: Criar um documento descrevendo os testes a serem realizados em https://evento.moblee.com.br/ByKtijSZQ
-
-### Descrição
-Você deverá especificar todos os casos de testes para o processo de compra de ingressos no site acima.
-
-Esse é um evento de testes, então não se preocupe em colocar dados "sujos" nele. 
-
-Se precisar utilizar um cartão de crédito você pode utilizar `4242 4242 4242 4242` com CVV `400`, qualquer data no futuro e nome do cartão são válidos.
-
-Crie um diretório chamado `1_planejamento` e armazene os cenários/casos de teste nele
-
-Você tem a opção de escolher entre esses dois formatos de entrega:
-1- Utilizando a linguagem [Gherkin](https://cucumber.io/docs/gherkin/reference/)
-2- Utilizando uma planilha com as colunas: Dados dos testes, Procedimento e Resultado Esperado
+Aqui no primeiro desafio, foi utilizado um estilo gherkin mais voltado ao usuário final, como utilizo mais com clientes, de forma mais clara e simples. Foi testado somente a compra de ingressos (É visualmente nítido que todo site tem bugs e pode ser bem melhorado. Sim eu sei que é um site de testes ahahha) em suas mais variadas formas.
+As informações por compra de cartão de crédito não funcionaram de jeito nenhum.
 
 ## Desafio 2 - Execução dos testes
-Objetivo: Executar os testes planejados na Parte 1, evidenciar os testes executados, criar métricas de execução e registro de defeitos.
-
-### Descrição
-Crie um diretório chamado `2_execucao`, onde você deve armazenar o resultado de execução de cada um dos testes planejados. 
-
-Identifique quais testes foram feitos, número de testes que passaram e o número de testes falhos, além de qualquer informação complementar que considere relevante.
-
-Crie também uma planilha com o registro dos defeitos encontrados durante a execução.
-
-Pense que outras pessoas precisarão ler e entender essas anotações (desenvolvedores, outros QAs, gerentes de projeto etc.).
+Aqui no segundo desafio, foi abordado os casos de teste das situações levantadas, juntamente com situações diferenciadas identificando quais testes foram aprovados e quais foram reprovados. Principais situações foram mencionadas.
 
 ## Desafio 3 - Automação dos testes
-Objetivo: Automatizar 3 dos cenário/casos de teste
-
-### Descrição
-Escolha 3 dos cenários/casos de teste que você executou e automatize ele.
-
-Crie um diretório chamado `3_automacao` para armazenar o código da automação.
-
-Você pode utilizar qualquer framework/ferramenta que preferir. Só lembre de deixar claro o passo-a-passo para executarmos sua automação. Lembre-se que a máquina de quem efetuará a avaliação nem sempre contém todos os pacotes, programas e afins, necessários para a execução.
+Aqui, infelizmente não sou um expert da automatização de software. Já trabalhei e já criei poucos scripts, porém, somente em cursos que fiz e não tive diretamente acesso ao código para fazer um teste em caixa branca em questão. Por isso, fiquei mais na caixa preta.
