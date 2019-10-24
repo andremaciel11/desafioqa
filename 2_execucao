@@ -48,12 +48,24 @@ Dado de entrada: Número inserido no campo CEP nos dados de cobrança
 Resultado obtido: Os campos Logradouro, Cidade, Bairro e Estado foram atualizados (O campo cidade não existe quando é estrangeiro)
 Resultado do teste: Aprovado
 
-Ação: Atualizar CEP e informações de endereço serem inseridas 
-Dado de entrada: Número errado inserido no campo CEP dos dados de cobrança
-Resultado obtido: Os campos Logradouro, Cidade, Bairro e Estado não foram atualizados (O campo cidade não existe quando é estrangeiro)
-Resultado do teste: Reprovado
+##Ação: Atualizar CEP e informações de endereço serem inseridas 
+  Dado de entrada: Número errado inserido no campo CEP dos dados de cobrança
+  Resultado obtido: Os campos Logradouro, Cidade, Bairro e Estado não foram atualizados (O campo cidade não existe quando é estrangeiro)
+  Resultado do teste: Reprovado
 
-Ação: Limpar informações do carrinho ao expirar tempo de compra 
-Dado de entrada: Tempo de expirar sessão finalizado e abertura do carrinho para nova compra
-Resultado obtido: Informações do comprador anterior (O certo é limpar os dados para toda nova compra)
-Resultado do teste: Reprovado
+##Ação: Limpar informações do carrinho ao expirar tempo de compra 
+  Dado de entrada: Tempo de expirar sessão finalizado e abertura do carrinho para nova compra
+  Resultado obtido: Informações do comprador anterior (O certo é limpar os dados para toda nova compra)
+  Resultado do teste: Reprovado
+
+
+##Melhorias iniciais:
+Incluir máscara no campo telefone
+
+Caso usuário for do exterior, não exigir dados de endereço de cobrança
+
+Incluir salvamento automático de cartão (navegador) somente ao fim da transação
+
+Permitir trocar a forma de pagamento (boleto / cartão) sem sair do checkout
+
+Em compras via boleto, não é necessário os dados de endereço de cobrança
